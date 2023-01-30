@@ -1,0 +1,59 @@
+{% extends "base.html" %} 
+
+{% block css %}
+    <link href="{{ url_for('static', filename='order.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<form method="POST">
+    <h2>Customised order</h2>
+
+    <p>This is customised order for whipped cream chiffon cake filled with fruit toppings, whipped cream in between layers.</p>
+
+    <img src="https://assets.epicurious.com/photos/62f2760bcc555cd43ffb143d/16:9/w_2560%2Cc_limit/ChineseSponge_HERO_080420_37960.jpg" 
+     alt="Fruit chiffon Cake" width="1000" height="600" />
+
+    <div id="cake-size-container">
+        <h3>Choose size of the cake</h3>
+        <label for="cake-size">Size:</label>
+        <select name="cake-size" id="cake-size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+    </div>
+
+    <div id="toppings-container">
+        <h3>Choose fruit toppings (limit 4)</h3>
+        <input type="checkbox" id="strawberry" name="toppings" value="HTML">
+        <label for="strawberry">Strawberry</label>
+        <input type="checkbox" id="mango" name="toppings" value="CSS">
+        <label for="mango">Mango</label>
+        <input type="checkbox" id="kiwi" name="toppings" value="CSS">
+        <label for="kiwi">Kiwi</label>
+    </div>
+
+    <div id="fillings-container">
+        <h3>Choose fruit fillings (limit 2)</h3>
+        <input type="checkbox" id="strawberry" name="toppings" value="HTML">
+        <label for="strawberry">Strawberry</label>
+        <input type="checkbox" id="mango" name="toppings" value="CSS">
+        <label for="mango">Mango</label>
+        <input type="checkbox" id="kiwi" name="toppings" value="CSS">
+        <label for="kiwi">Kiwi</label>
+    </div>
+
+    <div id="cake-flavour-container">
+        <h3>Select cake flavour:</h3>
+        <label for="cake-flavour">Flavour:</label>
+        <select name="cake-flavour" id="cake-flavour">
+            <option value="vanila">Vanilla</option>
+            <option value="lemon">Lemon</option>
+            <option value="matcha">Matcha</option>
+        </select>
+    </div>
+
+    <input type="submit" value="Submit">
+</form>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+:root {
+    background-color: wheat;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    border: 1px solid red;
+    margin: 10px 30px;
+}
+
+nav {
+    border: 1px solid red;
+    background-color: mintcream;
+}
+
+nav a {
+    border: 1px solid green;
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+}
+

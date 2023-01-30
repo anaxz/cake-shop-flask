@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='base.css') }}" rel="stylesheet">
+    {% block css %}{% endblock %}
+    <title>Cake Shop</title>
+</head>
+<body>
+    <nav>
+        <a id="home" href="/">Home</a>
+        <a id="order" href="/order">Order</a>
+        <a id="login" href="/login">Login</a>
+    </nav>
+    <div class="main-container">
+        {% block content %} {% endblock %}
+    </div>
+</body>
+</html>
