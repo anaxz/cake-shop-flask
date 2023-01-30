@@ -8,6 +8,7 @@ flask = "*"
 cors = "*"
 werkzeug = "*"
 flask-cors = "*"
+flask-sqlalchemy = "*"
 
 [dev-packages]
 

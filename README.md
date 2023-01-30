@@ -2,12 +2,12 @@
 
 ### Goal: 
 - Practise python and flask
-- try out the other hash secuirty
+- try out the other hash security
 
 ## Installation
 - cd into file
 - ```pipenv shell``` to run pipenv
-- ```pip install -r requirements.txt``` 
+- ```pip install -r requirements.txt``` to install dependencies
 
 ## Usage
 - ```pipenv shell``` to run pipenv 
