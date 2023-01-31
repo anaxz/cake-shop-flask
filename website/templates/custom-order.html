@@ -1,7 +1,7 @@
 {% extends "base.html" %} 
 
 {% block css %}
-    <link href="{{ url_for('static', filename='order.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/customOrder.css') }}" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
@@ -35,28 +35,31 @@
 
     <div id="toppings-container">
         <h3>Choose fruit toppings (limit 4)</h3>
-        <input type="checkbox" id="strawberry" name="toppings" value="HTML">
+        <input type="checkbox" id="toppings-strawberry" name="toppings" value="strawberry">
         <label for="strawberry">Strawberry</label>
-        <input type="checkbox" id="mango" name="toppings" value="CSS">
+        <input type="checkbox" id="toppings-mango" name="toppings" value="mango">
         <label for="mango">Mango</label>
-        <input type="checkbox" id="kiwi" name="toppings" value="CSS">
+        <input type="checkbox" id="toppings-kiwi" name="toppings" value="kiwi">
         <label for="kiwi">Kiwi</label>
     </div>
 
     <div id="fillings-container">
         <h3>Choose fruit fillings (limit 2)</h3>
-        <input type="checkbox" id="strawberry" name="toppings" value="HTML">
+        <input type="checkbox" id="fillings-strawberry" name="toppings" value="strawberry">
         <label for="strawberry">Strawberry</label>
-        <input type="checkbox" id="mango" name="toppings" value="CSS">
+        <input type="checkbox" id="fillings-mango" name="toppings" value="mango">
         <label for="mango">Mango</label>
-        <input type="checkbox" id="kiwi" name="toppings" value="CSS">
+        <input type="checkbox" id="fillings-kiwi" name="toppings" value="kiwi">
         <label for="kiwi">Kiwi</label>
     </div>
 
-    <button type="button" >Get a quote</button>
+    <button id="quote-btn" type="button" onclick="handleGetQuote()" >Get a quote</button>
     <input type="text" value="0.00" disabled />
 
     <input type="submit" value="Submit" disabled >
 </form>
 
+<script type="text/javascript"
+    src="{{ url_for('static', filename='js/custom-order.js') }}"
+></script>
 {% endblock %}

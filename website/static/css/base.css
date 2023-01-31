@@ -4,9 +4,8 @@
     margin: 0%;
 }
 
-body {
-    border: 1px solid red;
-    margin: 10px 30px;
+h1 {
+    text-align: center;
 }
 
 nav {
@@ -21,3 +20,15 @@ nav a {
     height: 200px;
 }
 
+body {
+    border: 1px solid red;
+    margin: 10px 30px;
+}
+
+#home-section {
+    border: 1px double blue;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    min-width: fit-content;
+}

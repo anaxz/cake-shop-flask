@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{{ url_for('static', filename='base.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/base.css') }}" rel="stylesheet">
     {% block css %}{% endblock %}
     <title>Cake Shop</title>
 </head>
@@ -16,10 +16,8 @@
         <a id="cakes" href="/cakes">Cakes</a>
         <a id="order" href="/custom-order">Custom Order</a>
         <a id="contact" href="/contact-us">Contact Us</a>
-        <a id="login" href="/login">Login</a>
+        <!-- <a id="login" href="/login" >Login</a> -->
     </nav>
-    <div class="main-container">
-        {% block content %} {% endblock %}
-    </div>
+    {% block content %} {% endblock %}
 </body>
 </html>

@@ -21,4 +21,4 @@
 
 #### Other notes:
 - ```pip freeze > requirements.txt``` updates requirement.txt file with dependencies. 
-- Link to wireframe: https://www.figma.com/file/5wLcNwWFTHMZurimRnBnlt/Cake-Shop---Flask?node-id=3%3A196&t=Uk02xpmb9BEx3Cq1-0 
+- Link to wireframe & notes: https://www.figma.com/file/5wLcNwWFTHMZurimRnBnlt/Cake-Shop---Flask?node-id=3%3A196&t=Uk02xpmb9BEx3Cq1-0 
