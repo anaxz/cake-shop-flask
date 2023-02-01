@@ -17,7 +17,7 @@
 - 
 
 ## Bugs
-- 
+- in custom order page -> click submit won't redirect to another page
 
 #### Other notes:
 - ```pip freeze > requirements.txt``` updates requirement.txt file with dependencies. 

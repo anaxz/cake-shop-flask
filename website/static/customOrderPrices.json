@@ -1,0 +1,23 @@
+{
+    "size": {
+        "small": 3.50,
+        "medium": 6.00,
+        "large": 9.00
+    },
+    "flavour": {
+        "vanila": 2,
+        "lemon": 2.20,
+        "matcha": 4
+    },
+    "toppings": {
+        "strawberry": 2.8,
+        "mango": 3.1,
+        "kiwi": 3, 
+        "grape": 2.4
+    },
+    "fillings": {
+        "strawberry": 0,
+        "mango": 0,
+        "kiwi": 0
+    }
+}

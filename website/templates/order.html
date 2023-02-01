@@ -1,0 +1,28 @@
+{% extends "base.html" %} 
+
+{% block css %}
+    <link href="{{ url_for('static', filename='css/customOrder.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<form method="post" id="order-container">
+<div id="inner-container">
+    <div id="labels-container">
+        <label for="fname" class="labels" >First name: </label>
+        <label for="surname" class="labels" >Surname: </label>
+        <label for="email" >Email: </label>
+        <label for="deliveryDate" >Delivery Date: </label>
+    </div>
+
+    <div id="input-container">
+        <input type="text" name="fname" placeholder="kate" value="first name" required />
+        <input type="text" name="surname" placeholder="Holland" value="surname" required />
+        <input type="email" name="email" placeholder="example@gmail.com" value="email" required />
+        <input type="date" name="deliveryDate" value="deliveryDate" required />
+    </div>
+</div>
+
+    <input type="submit" id="order-submit" value="Submit"/>
+
+</form>
+{% endblock %}

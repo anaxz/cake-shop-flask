@@ -1,3 +1,4 @@
+/* ---CustomOrder.html--- */
 
 img {
     display: block;
@@ -6,4 +7,34 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+}
+
+/* ---Order.html--- */
+
+#inner-container {
+    border: 2px blue dotted;
+    width: 60%;
+    margin: 4% auto; 
+}
+
+#order-container div {
+    border: 2px green dotted;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#labels-container {
+    border: 2px rebeccapurple solid;
+    display: flex;
+    flex-direction: column;
+}
+
+#input-container {
+    border: 2px red solid;
+    display: flex;
+    flex-direction: column;
+}
+#order-submit {
+    width: fit-content;
+    float: right;
 }

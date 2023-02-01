@@ -5,14 +5,15 @@
 {% endblock %}
 
 {% block content %}
-<form method="POST">
-    <h2>Customised order</h2>
+<div>
+<h2>Customised order</h2>
 
-    <p>This is customised order for whipped cream chiffon cake filled with fruit toppings, whipped cream in between layers.</p>
+<p>This is customised order for whipped cream chiffon cake filled with fruit toppings, whipped cream in between layers.</p>
 
-    <img src="https://assets.epicurious.com/photos/62f2760bcc555cd43ffb143d/16:9/w_2560%2Cc_limit/ChineseSponge_HERO_080420_37960.jpg" 
+<img src="https://assets.epicurious.com/photos/62f2760bcc555cd43ffb143d/16:9/w_2560%2Cc_limit/ChineseSponge_HERO_080420_37960.jpg" 
      alt="Fruit chiffon Cake" width="900" height="500" />
 
+<form method="POST">
     <div id="cake-size-container">
         <h3>Choose size of the cake</h3>
         <label for="cake-size">Size:</label>
@@ -41,23 +42,26 @@
         <label for="mango">Mango</label>
         <input type="checkbox" id="toppings-kiwi" name="toppings" value="kiwi">
         <label for="kiwi">Kiwi</label>
+        <input type="checkbox" id="toppings-grape" name="toppings" value="grape">
+        <label for="grape">Grape</label>
     </div>
 
     <div id="fillings-container">
         <h3>Choose fruit fillings (limit 2)</h3>
-        <input type="checkbox" id="fillings-strawberry" name="toppings" value="strawberry">
+        <input type="checkbox" id="fillings-strawberry" name="fillings" value="strawberry">
         <label for="strawberry">Strawberry</label>
-        <input type="checkbox" id="fillings-mango" name="toppings" value="mango">
+        <input type="checkbox" id="fillings-mango" name="fillings" value="mango">
         <label for="mango">Mango</label>
-        <input type="checkbox" id="fillings-kiwi" name="toppings" value="kiwi">
+        <input type="checkbox" id="fillings-kiwi" name="fillings" value="kiwi">
         <label for="kiwi">Kiwi</label>
     </div>
 
-    <button id="quote-btn" type="button" onclick="handleGetQuote()" >Get a quote</button>
-    <input type="text" value="0.00" disabled />
-
-    <input type="submit" value="Submit" disabled >
+    <button id="quote-btn" type="button" onclick="handleGetQuote()" value="Get Quote" >Get a quote</button>
+    <!-- <input type="text" id="predicted-price" value="0.00" disabled="displayBtns(false)" /> -->
+    <p id="price" value="0.00">£ {{price}}</p>
+    <input type="submit" id="submit-btn" value="Submit" disabled="displayBtns(false)" />
 </form>
+</div>
 
 <script type="text/javascript"
     src="{{ url_for('static', filename='js/custom-order.js') }}"
