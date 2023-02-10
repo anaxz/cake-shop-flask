@@ -1,23 +1,23 @@
 {
-    "size": {
-        "small": 3.50,
-        "medium": 6.00,
-        "large": 9.00
-    },
-    "flavour": {
-        "vanila": 2,
-        "lemon": 2.20,
-        "matcha": 4
-    },
-    "toppings": {
-        "strawberry": 2.8,
-        "mango": 3.1,
-        "kiwi": 3, 
-        "grape": 2.4
-    },
-    "fillings": {
-        "strawberry": 0,
-        "mango": 0,
-        "kiwi": 0
-    }
+    "size": [
+        {"small": 3.52},
+        {"medium": 6.03},
+        {"large": 9.61}
+    ],
+    "flavour": [
+        {"vanila": 2.20},
+        {"lemon": 2.29},
+        {"matcha": 4.10}
+    ],
+    "toppings": [
+        {"strawberry": 2.82},
+        {"mango": 3.12},
+        {"kiwi": 3.04}, 
+        {"grape": 2.44}
+    ],
+    "fillings": [
+        {"strawberry": 2.11},
+        {"mango": 2.51},
+        {"kiwi": 2.31}
+    ]
 }

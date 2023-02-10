@@ -2,7 +2,6 @@
 
 ### Goal: 
 - Practise python and flask
-- try out the other hash security
 
 ## Installation
 - cd into file
@@ -16,9 +15,13 @@
 ## Changelogs
 - 
 
+### In progress
+- need change and add to database but may change to simplier version
+
 ## Bugs
-- in custom order page -> click submit won't redirect to another page
+- get quote btn -> fillingsPrice not accurate
 
 #### Other notes:
 - ```pip freeze > requirements.txt``` updates requirement.txt file with dependencies. 
 - Link to wireframe & notes: https://www.figma.com/file/5wLcNwWFTHMZurimRnBnlt/Cake-Shop---Flask?node-id=3%3A196&t=Uk02xpmb9BEx3Cq1-0 
+- node version: 19.2.0

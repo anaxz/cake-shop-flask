@@ -6,7 +6,7 @@ function cake_link(e){
 async function customOrder_link(e){
     console.log('custom order clicked')
     try {
-        fetch('http://127.0.0.1:5000/custom-order')
+        await fetch('http://127.0.0.1:5000/custom-order')
     } catch(err){
         return err
     }
